@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --blue: #4cb5f9;
+  --slate: #fafafa;
+  --dark-blue: rgb(56, 81, 133);
+  --aspect: 900/450;
+  --border: rgb(219, 219, 219);
+}
+
+.main {
+  min-height: 100vh;
+  min-width: 100vw;
+  color: rgb(100, 100, 100);
+  background-color: white;
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  width: 175px;
+  height: 51px;
+  background-image: url(./Screenshot.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  height: 407px;
+  width: 350px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input {
+  background-color: var(--slate);
+  width: 260px;
+  height: 36px;
+  border-radius: 3px;
+  padding-left: 8px;
+  border-style: solid;
+  border-color: var(--border);
+  margin-bottom: 5px;
+}
+
+input::placeholder {
+  color: rgb(123, 123, 123);
+  font-size: 0.8rem;
+}
+
+input:focus {
+  border-color: rgb(163, 163, 163);
+}
+
+input:active {
+  border-color: rgb(163, 163, 163);
+}
+
+input:focus-visible {
+  border-color: rgb(163, 163, 163);
+}
+.login {
+  width: 260px;
+  height: 36px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.or {
+  margin: 15px;
+  font-size: 0.7rem;
+  position: relative;
+  font-weight: bold;
+  overflow: visible;
+}
+
+.or::after,
+.or::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  content: "";
+  height: 1px;
+  width: 110px;
+  background-color: var(--border);
+}
+
+.or::before {
+  left: -120px;
+}
+
+.or::after {
+  right: -120px;
+}
+
+.facebook {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.facebook-text {
+  color: var(--dark-blue);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.password {
+  font-size: 0.9rem;
+}
+
+.create-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  font-weight: 500;
+  border: 1px solid var(--border);
+  margin: 10px;
+  width: 350px;
+  height: 60px;
+}
+
+.get-app-div {
+  height: 40px;
+  width: 134px;
+  background-image: url(./get-app.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+.get {
+  margin-top: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.link-item {
+  margin: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.facebook-icon {
+  height: 1rem;
+  width: 1rem;
+  background-image: url("./facebook.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
