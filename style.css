@@ -207,3 +207,13 @@ input:focus-visible {
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 450px) {
+  .container {
+    border: none;
+  }
+
+  .create-new {
+    border: none;
+  }
+}
