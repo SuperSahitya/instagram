@@ -76,15 +76,16 @@ input::placeholder {
 }
 
 input:focus {
-  border-color: rgb(163, 163, 163);
+  outline: none;
+  border-color: #a8a8a8;
 }
 
 input:active {
-  border-color: rgb(163, 163, 163);
+  border-color: #a8a8a8;
 }
 
 input:focus-visible {
-  border-color: rgb(163, 163, 163);
+  border-color: #a8a8a8;
 }
 .login {
   width: 260px;
